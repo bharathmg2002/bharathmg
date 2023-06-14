@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BHARATH M G</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://kit.fontawesome.com/8809023013.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <nav>
+                <h2 class="navh2">BHARATH M G</h2>
+                <ul id="sidemenu">
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#resume" >Get my CV</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+
+    <div class="intro">
+        <div class="profile_img_div">
+            <div class="profile_img"></div>
+        </div>
+        
+        <div class="intro_user">
+             <div class="intro_user_center"><h2 > Hi , I'm <span class="span"> Bharath M G</span><br><h4 style="text-align:start;">A computer science student passionate about programming and design</h4></h2></div> 
+        </div>
+        
+    </div>
+
+    <!-- About -->
+    <div id="about">
+        <div class="container-about">
+            <div class="about-me">
+                <h2 class="subtitle">About Me</h2>
+                <p>I'm Bharath M G, and I'm currently studying B.E
+                    at Canara Engineering College. I'm a developer
+                    who always eager to create new and exciting
+                    things that can make a difference in people's
+                    lives. I have a particular passion for web
+                    development, where I get to combine my skills
+                    and imagination to build amazing websites. I
+                    would be thrilled to be part of the industry,
+                    working towards a brighter and more accessible
+                    future for everyone.
+                </p>
+                <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('personalskills')">Personal Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links r" onclick="opentab('hobbies')">Hobbies</p>
+                </div>
+                <div class="tab-contents active-tab" id="personalskills">
+                    <ul class="flex">
+                        <li><span>Communication</span><br><img src="Image/Personal Skills/meeting.png" alt=""></li>
+                        <li><span>Interested to Work Independently or <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; as a Team Member</span><br><img src="Image/Personal Skills/partners.png" alt=""></li>
+                        <li><span>Time Management</span><br><img src="Image/Personal Skills/time.png" alt=""></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul class="educenter">
+                        <li><span>2020-current</span><br><h2 class="edu"> B.E at Canara Engineering College. <br> CGPA :8.68</h2></li>
+                        <li><span>2018-2020</span><br><h2 class="edu">Pre-University from Ambika PU College Puttur. <br>Percentage :89</h2> </li>
+                        <li><span>2018</span><br><h2 class="edu"> SSLC from Ramakrishna High School Puttur. <br>Percentage :96.48</h2></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="hobbies">
+                    <ul class="flex">
+                        <li><span>Drawing</span><br><img src="Image/Hobbies/canvas.png" alt=""></li>
+                        <li><span>Mobile Games</span><br><img src="Image/Hobbies/controller.png" alt=""></li>
+                        <li><span>Cricket</span><br><img src="Image/Hobbies/cricket.png" alt=""></li>
+                    </ul>
+                </div>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-links"> Technical Skills</p>
+                </div>
+                <div class="tab-contents active-tabs" >
+                    <ul class="flex">
+                        <li><span>HTML</span><br><img src="Image/Technical Skills/html-5.png" alt=""></li>
+                        <li><span>CSS</span><br><img src="Image/Technical Skills/css-3.png" alt=""></li>
+                        <li><span>C</span><br><img src="Image/Technical Skills/letter-c.png" alt=""></li>
+                    </ul>
+                    <ul class="flex">
+                        <li><span>JAVA</span><br><img src="Image/Technical Skills/java.png" alt=""></li>
+                        <li><span>Python</span><br><img src="Image/Technical Skills/python.png" alt=""></li>
+                        <li><span>JAVASCRIPT</span><br><img src="Image/Technical Skills/js.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---Projects--- -->
+    <div id="projects">
+        <div class="container">
+            <h2 class="subtitle">Projects</h2>
+            <div class="projects-list">
+                <ul class="flex">
+                    <li><a href="https://github.com/bharathmg2002/Hotel-Management-System"><img src="Image/Project/restaurant-cutlery-circular-symbol-of-a-spoon-and-a-fork-in-a-circle.png" alt=""></a><h3><a href="https://github.com/bharathmg2002/Hotel-Management-System">Hotel Management</a> </h3>
+                        <p>The website where
+                            the customers can make an order for the food
+                            and <br> avoid the hassles of waiting for the order to
+                            be taken by the waiter.
+                        </p>
+                    </li>
+                    <li><a href="#"><img src="Image/Project/alarm.png" alt=""></a><h3><a href="#">Simple Alarm Clock</a> </h3>
+                        <p>Current Working Project
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------contact----------- -->
+    <div id="contact">
+        <div class="container">
+            <h1 class="subtitle">Contact Me</h1>
+            <div class="row">
+                <div class="contact-left">
+                    
+                    <p><i class="fa-solid fa-paper-plane"></i><a href="mailto:bharathmg2002@gmail.com">bharathmg2002@gmail.com</a> </p>
+                    <p><i class="fa-solid fa-phone-volume"></i><a href="tel:+919141589834">+919141589834</a></p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100077756862801"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/bharath-m-g-19116b21b/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/bharath_m.g/"><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                    <section id="downloadcv">
+                        <a href="Image/Technical Skills/Resume-Bharath M G.pdf"  id="resume" download class="btn">Download CV</a>
+                    </section>
+                    
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet" action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright 
+               <i class="fa fa-copyright"></i>
+               made by:Bharath
+               <i class="fa fa-heart"></i>
+            </p>
+        </div>
+    </div>
+
+
+
+
+<script>
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname)
+    {
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+       event.currentTarget.classList.add("active-link");
+       document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwRzqbZFDPwI-iS3mGoW3DraRryCpQ4fLRUOzVEAw6V4AGFFyedGiGNJug5b1yOmByaow/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Your Information Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },2000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
