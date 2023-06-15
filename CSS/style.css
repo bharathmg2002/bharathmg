@@ -33,7 +33,7 @@ html {
 {
     padding: 10px 10%;
     border: solid;
-   
+    z-index: 1;
 }
 h1{
     font-size: 40px;
@@ -170,7 +170,6 @@ nav{
     font-weight: 700;
     cursor: pointer;
     position: relative;
-    z-index: -1;
 }
 .r{
     margin-right: 100px;
