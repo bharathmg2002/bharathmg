@@ -297,6 +297,7 @@ span{
 
 .certificate-list .flex{
     display: flex;
+    flex-wrap: wrap;
     justify-content:space-around;
 }
 .certificate-list ul{
