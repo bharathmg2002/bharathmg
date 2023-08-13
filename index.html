@@ -18,7 +18,7 @@
                     <li><a href="#projects"><B>Projects</B></a></li>
                     <li><a href="#certificate"><B>Certifications</B></a></li>
                     <li><a href="#contact"><B>Contact</B></a></li>
-                    <li><a href="#resume" ><B>Get my CV</B></a></li>
+                    <li><a href="#resume" onclick="setTimeout(arrow,10)"><B>Get my CV</B></a></li>
                     <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
@@ -63,23 +63,23 @@
                 </div>
                 <div class="tab-contents active-tab" id="personalskills">
                     <ul class="flex">
-                        <li><div class="phead">Communication</div><br><img src="Image/Personal Skills/meeting.png" alt=""></li>
-                        <li><div class="phead">Interested to Work Independently or as a Team Member</div><br><img src="Image/Personal Skills/partners.png" alt=""></li>
-                        <li><div class="phead">Time Management</div><br><img src="Image/Personal Skills/time.png" alt=""></li>
+                        <li><img src="Image/Personal Skills/meeting.png" alt=""><br><div class="phead">Communication</div></li>
+                        <li><img src="Image/Personal Skills/partners.png" alt=""><br><div class="phead">Interested to Work Independently or as a Team Member</div></li>
+                        <li><img src="Image/Personal Skills/time.png" alt=""><br><div class="phead">Time Management</div></li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="education">
                     <ul class="educenter">
-                        <li><div class="phead">2020-current</div><br><h2 class="edu"> B.E at Canara Engineering College. <br> CGPA :8.68</h2></li>
-                        <li><div class="phead">2018-2020</div><br><h2 class="edu">Pre-University from Ambika PU College Puttur. <br>Percentage :89</h2> </li>
-                        <li><div class="phead">2018</div><br><h2 class="edu"> SSLC from Ramakrishna High School Puttur. <br>Percentage :96.48</h2></li>
+                        <li><h2 class="edu"> B.E at Canara Engineering College. <br> CGPA :8.68</h2><br><div class="phead">2020-current</div></li>
+                        <li><h2 class="edu">Pre-University from Ambika PU College Puttur. <br>Percentage :89</h2><div class="phead">2018-2020</div> </li>
+                        <li><h2 class="edu"> SSLC from Ramakrishna High School Puttur. <br>Percentage :96.48</h2><br><div class="phead">2018</div></li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="hobbies">
                     <ul class="flex">
-                        <li><div class="phead">Mobile Games</div><br><img src="Image/Hobbies/controller.png" alt=""></li>
-                        <li><div class="phead">Cricket</div><br><img src="Image/Hobbies/cricket.png" alt=""></li>
-                        <li><div class="phead">Drawing</div><br><img src="Image/Hobbies/canvas.png" alt=""></li>
+                        <li><img src="Image/Hobbies/controller.png" alt=""><br><div class="phead">Mobile Games</div></li>
+                        <li><img src="Image/Hobbies/cricket.png" alt=""><br><div class="phead">Cricket</div><br></li>
+                        <li><img src="Image/Hobbies/canvas.png" alt=""><br><div class="phead">Drawing</div><br></li>
                     </ul>
                 </div>
 
@@ -88,14 +88,14 @@
                 </div>
                 <div class="tab-contents active-tabs" >
                     <ul class="flex">
-                        <li><div class="phead">HTML</div><br><img src="Image/Technical Skills/html-5.png" alt=""></li>
-                        <li><div class="phead">CSS</div><br><img src="Image/Technical Skills/css-3.png" alt=""></li>
-                        <li><div class="phead">C</div><br><img src="Image/Technical Skills/letter-c.png" alt=""></li>
+                        <li><img src="Image/Technical Skills/html-5.png" alt=""><br><div class="phead">HTML</div></li>
+                        <li><img src="Image/Technical Skills/css-3.png" alt=""><br><div class="phead">CSS</div></li>
+                        <li><img src="Image/Technical Skills/letter-c.png" alt=""><div class="phead">C</div></li>
                     </ul>
                     <ul class="flex">
-                        <li><div class="phead">JAVA</div><br><img src="Image/Technical Skills/java.png" alt=""></li>
-                        <li><div class="phead">Python</div><br><img src="Image/Technical Skills/python.png" alt=""></li>
-                        <li><div class="phead">JAVASCRIPT</div><br><img src="Image/Technical Skills/js.png" alt=""></li>
+                        <li><img src="Image/Technical Skills/java.png" alt=""><br><div class="phead">JAVA</div></li>
+                        <li><img src="Image/Technical Skills/python.png" alt=""><br><div class="phead">Python</div></li>
+                        <li><img src="Image/Technical Skills/js.png" alt=""><br><div class="phead">JAVASCRIPT</div></li>
                     </ul>
                 </div>
             </div>
@@ -207,6 +207,9 @@
                         <a href="https://github.com/bharathmg2002" target="_blank" ><i class="fa-brands fa-github"></i></a>
                     </div>
                     <section id="downloadcv">
+                        <div id="download-arrow">
+                            <i class="fa fa-solid fa-down-long fa-2xl arrow1" aria-hidden="true"></i>
+                        </div>
                         <a href="Image/Technical Skills/Bharath_Resume.pdf"  id="resume" download class="btn">Download CV</a>
                     </section>
                     
@@ -248,6 +251,10 @@
         }
        event.currentTarget.classList.add("active-link");
        document.getElementById(tabname).classList.add("active-tab");
+    }
+    function arrow()
+    {
+        document.getElementById("download-arrow").style.display="block";
     }
 </script>
 <script>

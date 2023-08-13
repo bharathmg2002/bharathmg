@@ -100,8 +100,12 @@ nav{
 .intro
 {
     display: block; 
-    background-image: url(../Image/front.jpg);
-    background-size: cover;
+    /* background-image: url(../Image/front.jpg);
+    background-size: cover; */
+    animation-name: example;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
 
 }
 .profile_img_div{
@@ -109,7 +113,34 @@ nav{
     height: 370px;
     margin: 0 36%;
     padding-top: 5%;
+}
 
+@keyframes example{
+    0%{
+        background-image: url(../Image/front.jpg);
+        background-size: cover;
+    }
+    0%{
+        display: none;
+        background-image: url(../Image/front1.jpg);
+        background-size: cover;
+    }
+    25%{
+        background-image: url(../Image/b1.jpg);
+        background-size: cover;
+    }
+    50%{
+        background-image: url(../Image/m4.jpg);
+        background-size: cover;
+    }
+    75%{
+        background-image: url(../Image/b3.jpg);
+        background-size: cover;
+    }
+    100%{
+        background-image: url(../Image/b5.jpg);
+        background-size: cover;
+    }
 }
 .profile_img
 {
@@ -174,8 +205,9 @@ span{
 }
 .tab-titles{
     display: flex;
-    margin: 30px 0 40px;
     justify-content: center;
+    align-items: center;
+    margin: 30px 0 40px;
     border: solid; 
 }
 
@@ -206,7 +238,6 @@ span{
     width: 100%;
 }
 
-
 .tab-contents .flex{
     display: flex;
     justify-content:space-around;
@@ -221,8 +252,6 @@ span{
 .tab-contents ul li{
     list-style: none;
     margin: 1% 10%;
-    /* padding: 3%; */
-    /* margin-right: 15%; */
     width: 100%;
 }
 .tab-contents ul li img{
@@ -230,14 +259,12 @@ span{
     height: 200px;
     border-radius: 20%;
     box-shadow: -4px -4px 12px rgba(254, 142, 76, 0.756), 2px 2px 10px rgba(45, 196, 250, 0.5);
-    /* margin: 0 50%; */
 }
 
 .tab-contents ul li .phead{
     color: #ff004f;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 230%;
-    /* margin: 5% 50%; */
     font-weight: 50%;
     width: 100%;
     text-align: center;
@@ -273,7 +300,7 @@ span{
 }
 .projects-list ul h3{
     text-align: center;
-    margin-right: 10%;
+    margin-right: 16%;
     padding-left: 15%;
 }
 .projects-list ul a{
@@ -405,7 +432,7 @@ span{
 	font-weight: 670;
   line-height: 24px;
   overflow: hidden;
-  padding: 12px 24px;
+  padding: 3% 5%;
   position: relative;
   text-decoration: none;
   transition: 0.2s
@@ -414,6 +441,29 @@ span{
     transform: scale(1.1);
     box-shadow: 7px 6px 28px 1px rgba(0,0,0,0.24);
     background-color: #d00100;
+}
+
+.contact-right .btn{
+    padding: 0.8% 3%;
+}
+
+#download-arrow{
+    display: none;
+    margin-bottom: 3%;
+ .arrow1{
+    animation: slide1 1s ease-in-out infinite;
+    margin-left: 17%;
+    
+}
+}
+@keyframes slide1{
+    0%,
+    100%{
+        transform: translate(0,0) ;
+    }
+    50%{
+        transform: translate(0px,10px) ;
+    }
 }
 .contact-right form{
     width: 100%;
@@ -497,6 +547,9 @@ nav .fa-solid{
         height: 30px;
         text-align: center;
     }
+    .contact-right .btn{
+        width: 26%;
+    }
     .intro
     {
         justify-content:center;
@@ -511,10 +564,31 @@ nav .fa-solid{
         font-size: 50%;
         display: block;
     }
-    .intro
-    {
-        background-image: url(../Image/front1.jpg);
-        background-size: cover;
+    
+    @keyframes example{
+       
+        0%{
+            display: block;
+            background-image: url(../Image/front1.jpg);
+            background-size: cover;
+        }
+        25%{
+            display: block;
+            background-image: url(../Image/b1.jpg);
+            background-size: cover;
+        }
+        50%{
+            background-image: url(../Image/m4.jpg);
+            background-size: cover;
+        }
+        75%{
+            background-image: url(../Image/b3.jpg);
+            background-size: cover;
+        }
+        100%{
+            background-image: url(../Image/b5.jpg);
+            background-size: cover;
+        }
     }
     .profile_img_div{
         width: 350px;
@@ -619,6 +693,12 @@ nav .fa-solid{
     margin-right: 0;
     }
     #about{
+        padding: 30px 10px;
+    }
+    #projects{
+        padding: 30px 10px;
+    }
+    #certificate{
         padding: 30px 10px;
     }
     .row{
