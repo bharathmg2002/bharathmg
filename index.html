@@ -56,10 +56,15 @@
                     working towards a brighter and more accessible
                     future for everyone.
                 </p>
+                <div class="about-arrow">
+                    <i class="fa fa-solid fa-down-long fa-bounce fa-2xl arrow1" id="per"  aria-hidden="true"></i>
+                    <i class="fa fa-solid fa-down-long fa-bounce fa-2xl arrow1" id="edu" aria-hidden="true"></i>
+                    <i class="fa fa-solid fa-down-long fa-bounce fa-2xl arrow1" id="hob" aria-hidden="true"></i>
+                </div>
                 <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('personalskills')">Personal Skills</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                        <p class="tab-links r" onclick="opentab('hobbies')">Hobbies</p>
+                        <p class="tab-links active-link"  onclick="opentab('personalskills')" id="person">Personal Skills</p>
+                        <p class="tab-links"  onclick="opentab('education')" >Education</p>
+                        <p class="tab-links r"  onclick="opentab('hobbies')" id="hobi">Hobbies</p>
                 </div>
                 <div class="tab-contents active-tab" id="personalskills">
                     <ul class="flex">
@@ -70,9 +75,9 @@
                 </div>
                 <div class="tab-contents" id="education">
                     <ul class="educenter">
-                        <li><h2 class="edu"> B.E at Canara Engineering College. <br> CGPA :8.68</h2><br><div class="phead">2020-current</div></li>
-                        <li><h2 class="edu">Pre-University from Ambika PU College Puttur. <br>Percentage :89</h2><div class="phead">2018-2020</div> </li>
-                        <li><h2 class="edu"> SSLC from Ramakrishna High School Puttur. <br>Percentage :96.48</h2><br><div class="phead">2018</div></li>
+                        <li><h2 class="edu"> <div class="phead">2020-current</div>B.E at Canara Engineering College. <br> CGPA :8.68</h2><br></li>
+                        <li><h2 class="edu"><div class="phead">2018-2020</div>Pre-University from Ambika PU College Puttur. <br>Percentage :89</h2><br> </li>
+                        <li><h2 class="edu"> <div class="phead">2018</div>SSLC from Ramakrishna High School Puttur. <br>Percentage :96.48</h2><br></li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="hobbies">
@@ -240,9 +245,13 @@
 <script>
     var tablinks= document.getElementsByClassName("tab-links");
     var tabcontents= document.getElementsByClassName("tab-contents");
+    var per=document.getElementById("per");
+    var edu=document.getElementById("edu");
+    var hob=document.getElementById("hob");
 
     function opentab(tabname)
     {
+
         for(tablink of tablinks){
             tablink.classList.remove("active-link");
         }
@@ -251,12 +260,34 @@
         }
        event.currentTarget.classList.add("active-link");
        document.getElementById(tabname).classList.add("active-tab");
+       if(tabname=="personalskills")
+       {
+        per.style.visibility="hidden";
+        hob.style.visibility="hidden";
+        edu.style.visibility="visible";
+        }
+       if(tabname=="education")
+       {
+        per.style.visibility="hidden";
+        edu.style.visibility="hidden";
+        hob.style.visibility="visible";
+
+       }
+       if(tabname=="hobbies")
+       {
+        edu.style.visibility="hidden";
+        hob.style.visibility="hidden";
+        per.style.visibility="visible";
+
+       }
+            
     }
     function arrow()
     {
         document.getElementById("download-arrow").style.display="block";
     }
 </script>
+    
 <script>
     var sidemenu=document.getElementById("sidemenu");
 
