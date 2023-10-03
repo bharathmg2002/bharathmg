@@ -300,6 +300,7 @@ span{
 
 #projects{
     padding: 30px 30px;
+    padding-bottom: 0px;
     margin: 2% 0;
 }
 #projects .container{
@@ -345,6 +346,30 @@ span{
     font-size: 200%;
     text-align: justify;
     padding: 0 5%;
+}
+
+#MobileDisplay{
+    display: none;
+}
+
+#DesDisplay{
+    margin: 2% 20%;
+    text-align: center;
+}
+
+#DesDisplay img{
+    margin: 0% 35%;
+    width: 200px;
+    height: 200px;
+    margin-left: 35%;
+    transition: background 0.5s,transform 0.5s;
+    box-shadow: -4px -4px 13px rgba(252, 198, 5, 0.756), 4px 4px 10px rgba(5, 13, 246, 0.5);
+}
+
+#DesDisplay h3 a{
+    text-decoration: none;
+    color: #FF004F;
+    font-size: 230%;
 }
 
 /* --------certifications------- */
@@ -721,6 +746,12 @@ nav .fa-solid{
     }
     form input{
         padding: 10px;
+    }
+    #DesDisplay{
+        display: none;
+    }
+    #MobileDisplay{
+        display: block;
     }
 }
 
