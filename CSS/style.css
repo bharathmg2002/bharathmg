@@ -352,9 +352,19 @@ span{
     display: none;
 }
 
+#gamelink{
+    text-decoration: underline;
+    font-size: large
+}
+
 #DesDisplay{
     margin: 2% 20%;
     text-align: center;
+}
+
+#projects #note{
+    text-align: center;
+    color: #d00100;
 }
 
 #DesDisplay img{
