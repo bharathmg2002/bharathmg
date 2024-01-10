@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <link rel="preload" as="image" href="Image/front.jpg">
+    <link rel="preload" as="image" href="Image/front1.jpg">
+    <link rel="preload" as="image" href="Image/b1.jpg">
+    <link rel="preload" as="image" href="Image/m4.jpg">
+    <link rel="preload" as="image" href="Image/b3.jpg">
+    <link rel="preload" as="image" href="Image/b5.jpg">
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -334,6 +342,56 @@
         .catch(error => console.error('Error!', error.message))
     })
   </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const intro = document.querySelector('.intro');
+        const images = {
+            desktop: [
+                '../Image/front.jpg',
+                '../Image/b1.jpg',
+                '../Image/m4.jpg',
+                '../Image/b3.jpg',
+                '../Image/b5.jpg'
+            ],
+            mobile: [
+                '../Image/front1.jpg',
+                '../Image/b1.jpg',
+                '../Image/m4.jpg',
+                '../Image/b3.jpg',
+                '../Image/b5.jpg'
+            ]
+        };
+        let currentImageIndex = 0;
+
+        function preloadImages(imageArray) {
+            imageArray.forEach(src => {
+                const img = new Image();
+                img.src = src;
+            });
+        }
+
+        function changeBackgroundImage() {
+            const screenWidth = window.innerWidth;
+
+            let currentImages = images.desktop;
+            if (screenWidth <= 700) {
+                currentImages = images.mobile;
+            }
+
+            intro.style.backgroundImage = `url(${currentImages[currentImageIndex]})`;
+            currentImageIndex = (currentImageIndex + 1) % currentImages.length;
+        }
+
+        preloadImages(images.desktop);
+        preloadImages(images.mobile);
+
+        changeBackgroundImage(); 
+
+        
+        setInterval(changeBackgroundImage, 5000);
+    });
+</script>
 
 </body>
 </html>

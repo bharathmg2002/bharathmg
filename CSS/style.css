@@ -99,13 +99,17 @@ nav{
 
 .intro
 {
+    background-color: #f2f2f2;
     display: block; 
-    animation-name: example;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
+    /* animation-name: example; */
+    /* animation-duration: 20s; */
+    /* animation-iteration-count: infinite; */
+    /* animation-direction: alternate-reverse; */
+    background-size: cover;
+    visibility: visible;
 
 }
+
 .profile_img_div{
     /* width: 710px;
     height: 370px; */
@@ -114,33 +118,39 @@ nav{
     padding-bottom: 0%;
 }
 
-@keyframes example{
+/* @keyframes example{
     0%{
         background-image: url(../Image/front.jpg);
         background-size: cover;
+        opacity: 1;
     }
     0%{
         display: none;
         background-image: url(../Image/front1.jpg);
         background-size: cover;
+        opacity: 1;
     }
     25%{
         background-image: url(../Image/b1.jpg);
         background-size: cover;
+        opacity: 1;
     }
     50%{
         background-image: url(../Image/m4.jpg);
         background-size: cover;
+        opacity: 1;
     }
     75%{
         background-image: url(../Image/b3.jpg);
         background-size: cover;
+        opacity: 1;
     }
     100%{
         background-image: url(../Image/b5.jpg);
         background-size: cover;
+        opacity: 1;
     }
-}
+} */
 .profile_img
 {
     width: 350px;
@@ -616,7 +626,7 @@ nav .fa-solid{
         display: block;
     }
     
-    @keyframes example{
+    /* @keyframes example{
        
         0%{
             display: block;
@@ -640,7 +650,7 @@ nav .fa-solid{
             background-image: url(../Image/b5.jpg);
             background-size: cover;
         }
-    }
+    } */
     .profile_img_div{
         width: 350px;
         height: 350px;
