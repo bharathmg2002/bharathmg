@@ -321,6 +321,7 @@ span{
 .projects-list .flex{
     display: flex;
     justify-content: revert;
+    margin-bottom: 4%;
 }
 .projects-list ul{
     list-style: none;
